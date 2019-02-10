@@ -20,6 +20,4 @@ export const generalList = [
   new General('Alexander Suvorov', 1786, "Russian Empire", 'Russia', 8, 'Italian Campaign', 'Generalissimo', 8 ),
   new General('Han Xin', -205, "Han Dynasty", 'China', 9, 'Gaixia', 'Grand Marshal(Da Sima)', 9 ),
   new General('Jan Zizka', 1421, "Kingdom of Bohemia", 'Czech Repbulic', 10, 'Hussite Wars','Hetman', 10 ),
-
-
 ]
