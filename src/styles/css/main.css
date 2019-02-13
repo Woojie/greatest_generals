@@ -1,0 +1,124 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  overflow-x: hidden;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+.main {
+  min-height: 100vh;
+  padding-top: 3.8rem;
+}
+
+.container {
+  text-align: center;
+  margin: 0 auto;
+  width: 50vw;
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 80vw;
+  }
+}
+body {
+  font-family: "Constantia", sans-serif;
+  color: #111111;
+}
+
+a {
+  text-decoration: none;
+  color: #111111;
+}
+
+.navbar {
+  background-color: #914814c2;
+  background-size: cover;
+  padding: 1.25rem 0;
+  width: 100%;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+.navbar-brand-logo {
+  height: 50px;
+  display: block;
+}
+.navbar-brand-title {
+  display: block;
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-shadow: none;
+}
+.navbar-links {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.navbar-links-item {
+  margin: 0 1rem;
+  display: inline-block;
+}
+.navbar-links-exit {
+  display: none;
+}
+.navbar-toggler {
+  display: none;
+}
+
+@media (max-width: 920px) {
+  .navbar {
+    background: none;
+    display: block;
+  }
+  .navbar-menu {
+    height: 4em;
+  }
+  .navbar-toggler {
+    display: flex;
+  }
+  .navbar-brand-logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -43.33px;
+    height: 4rem;
+  }
+  .navbar-brand-title {
+    display: none;
+    font-size: 1 rem;
+  }
+  .navbar-links {
+    width: 70vw;
+    height: 100vh;
+    display: block;
+  }
+  .navbar-links-item {
+    display: block;
+    padding: 1rem;
+    text-align: center;
+  }
+  .navbar-links-exit {
+    display: block;
+    text-align: right;
+    padding: 1rem 1rem 0 0;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

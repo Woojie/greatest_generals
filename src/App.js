@@ -1,13 +1,18 @@
 import React, { Component } from 'react';
+import { Switch, Route } from 'react-router-dom'
 
-import { generalList } from './api/generalList.js'
+import Navbar from './components/Navbar'
+
 
 class App extends Component {
   render() {
-    
     return (
-      <div className="App">
-      </div>
+      <React.Fragment>
+        <Navbar />
+        <div className="main" data-test="app-component">
+          Hello World
+        </div>
+      </React.Fragment>
     );
   }
 }
