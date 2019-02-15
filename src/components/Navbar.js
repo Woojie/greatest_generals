@@ -19,14 +19,14 @@ export default class Navbar extends Component {
   closeMenu = () => {
     this.setState({
       hidden: true
-    })
+    })  
   }
 
   render() {
     let hiddenToggler = this.state.hidden ? 'navbar-links hidden' : 'navbar-links'
 
     return (
-      <div className="navbar">
+      <div className="navbar" data-test="navbar-component">
         <div className="navbar-toggler">
           <img className="navbar-menu" src={menu} alt="hamburger menu" onClick={this.onClick} />
         </div>
@@ -38,26 +38,28 @@ export default class Navbar extends Component {
         </Link>
 
         <ul className={hiddenToggler}>
+
           <li className="navbar-links-exit">
             <img src={exit} alt="x" width="20px" onClick={this.closeMenu} />
           </li>
 
           <li className="navbar-links-item">
-            <Link to="/" onClick={this.closeMenu}>
+            <Link to="/theList" onClick={this.closeMenu}>
               The List
             </Link>
           </li>
+
           <li className="navbar-links-item">
-            <Link to="/pod" onClick={this.closeMenu}>
+            <Link to="/generals" onClick={this.closeMenu}>
               Generals
             </Link>
           </li>
+
           <li className="navbar-links-item">
             <Link to="/teampage" onClick={this.closeMenu}>
-              Our Team
+              Make Your Own List
             </Link>
           </li>
-
         </ul>
       </div>
     )

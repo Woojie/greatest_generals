@@ -1,6 +1,5 @@
 .navbar {
   background-color: $navbar-background-color;
-  background-size: cover;
   padding: 1.25rem 0;
   width: 100%;
   position: fixed;
@@ -48,6 +47,7 @@
 @media (max-width: 920px) {
   .navbar {
     background: none;
+    padding: 0;
     display: block;
 
     &-menu {
@@ -56,6 +56,8 @@
 
     &-toggler {
       display: flex;
+      background-color: $navbar-background-color;
+
     }
 
     &-brand {
@@ -73,9 +75,10 @@
       }
     }
 
+
     &-links {
+      background-color: $navbar-background-color;
       width: 70vw;
-      height: 100vh;
       display: block;
 
       &-item {
