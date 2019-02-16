@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
 import { Switch, Route } from 'react-router-dom'
 
-import Navbar from './components/Navbar'
+import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home'
 import TheList from './components/TheList'
 import Generals from './components/Generals'
+import NotFound from './NotFound'
 
 class App extends Component {
   render() {
@@ -17,6 +18,7 @@ class App extends Component {
             <Route path="/theList"  render={props => <TheList {...props} />} />
             <Route path="/generals"  render={props => <Generals {...props} />} />
             <Route path="/generals/:generalsid"  render={props => <Generals {...props} />} />
+            <Route component={NotFound} />
           </Switch>
         </div>x
       </React.Fragment>

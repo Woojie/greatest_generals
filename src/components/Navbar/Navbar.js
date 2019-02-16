@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 
-import menu from '../images/nav/menu.svg'
-import exit from '../images/nav/exit.svg'
+import menu from '../../images/nav/menu.svg'
+import exit from '../../images/nav/exit.svg'
 
 
 export default class Navbar extends Component {
