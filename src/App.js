@@ -18,7 +18,7 @@ class App extends Component {
             <Route path="/generals"  render={props => <Generals {...props} />} />
             <Route path="/generals/:generalsid"  render={props => <Generals {...props} />} />
           </Switch>
-        </div>
+        </div>x
       </React.Fragment>
     );
   }

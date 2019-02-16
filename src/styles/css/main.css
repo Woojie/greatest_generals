@@ -19,9 +19,18 @@ body {
 
 .container {
   text-align: center;
+  display: flex;
   margin: 0 auto;
-  width: 50vw;
+  width: 60vw;
   padding-bottom: 4rem;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.generalList--column--4 {
+  flex: 1 0 21%;
+  margin: 5px;
 }
 
 @media (max-width: 768px) {
@@ -39,8 +48,15 @@ a {
   color: #111111;
 }
 
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0.5rem 0;
+  letter-spacing: 0.2rem;
+}
+
 .navbar {
-  background-color: #914814c2;
+  background-color: #914814;
   padding: 1.25rem 0;
   width: 100%;
   position: fixed;
@@ -89,7 +105,7 @@ a {
   }
   .navbar-toggler {
     display: flex;
-    background-color: #914814c2;
+    background-color: #914814;
   }
   .navbar-brand-logo {
     position: absolute;
@@ -103,7 +119,7 @@ a {
     font-size: 1 rem;
   }
   .navbar-links {
-    background-color: #914814c2;
+    background-color: #914814;
     width: 70vw;
     display: block;
   }

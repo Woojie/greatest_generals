@@ -6,10 +6,25 @@
 
 .container {
   text-align: center;
+  display: flex;
   margin: 0 auto;
-  width: 50vw;
+  width: 60vw;
   padding-bottom: 4rem;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
 
+}
+
+.generalList{
+
+  &--column {
+    
+    &--4 {
+      flex: 1 0 21%;
+      margin: 5px;
+    }
+  }
 }
 
 @media (max-width: 768px) {

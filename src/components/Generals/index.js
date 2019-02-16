@@ -9,6 +9,7 @@ export default class Generals extends React.Component{
     return(
       <div>
         <h1>Generals</h1>
-      </div>    )
+      </div>    
+    )
   }
 }

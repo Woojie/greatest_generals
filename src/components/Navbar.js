@@ -33,7 +33,7 @@ export default class Navbar extends Component {
 
         <Link to="/">
           <div className="navbar-brand">
-            <h1 className="navbar-brand-title">World History Deliberation</h1>
+            <h1 className="navbar-brand-title">History Deliberation</h1>
           </div>
         </Link>
 

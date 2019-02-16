@@ -18,10 +18,11 @@ test('renders without crashing', () => {
 });
 
 test('expect inital hidden state to be true', () => {
-  const wrapper=(setup())
+  const wrapper=setup()
   expect(wrapper.state('hidden')).toEqual(true)
 })
 
 test('clicking button changes hidden state (for mobile nav)', ()=>{
+  const wrapper = setup()
   
 })

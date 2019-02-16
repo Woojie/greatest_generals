@@ -5,6 +5,7 @@ function General(name, date, nationality, modernNationality, rank, achievement, 
   this.moderNationality = modernNationality;
   this.rank = rank;
   this.achievement = achievement;
+  this.title = title;
   this.id = id
 
 }
