@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home'
 import TheList from './components/TheList'
 import Generals from './components/Generals'
-import NotFound from './NotFound'
+import PageDoesNotExist from './404Error'
 
 class App extends Component {
   render() {
@@ -18,7 +18,7 @@ class App extends Component {
             <Route path="/theList"  render={props => <TheList {...props} />} />
             <Route path="/generals"  render={props => <Generals {...props} />} />
             <Route path="/generals/:generalsid"  render={props => <Generals {...props} />} />
-            <Route component={NotFound} />
+            <Route component={PageDoesNotExist} />
           </Switch>
         </div>x
       </React.Fragment>
