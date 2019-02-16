@@ -1,8 +1,12 @@
 import React from 'react'
 
-const Generals = (props) => (
+const Generals = ({ name, portrait }) => (
   <div className="generalList--column--4">
-    {props.name}
+    <div className="card">
+      <img className="card--image" src={portrait} alt={name} />
+      <h3>{name}</h3>
+
+    </div>
   </div>
 )
 

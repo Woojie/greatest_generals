@@ -9,7 +9,14 @@ class TheList extends React.Component{
 
   render(){
 
-    const generalList = this.props.generals.map(general=><Generals key={general.id} name={general.name} />)
+    const generalList = this.props.generals.map(general=><Generals 
+      key={general.id} 
+      name={general.name}
+      date={general.date}
+      portrait={general.image}
+      rank={general.rank}
+      nationality={general.nationality} 
+    />)
 
     return(
       <React.Fragment>
