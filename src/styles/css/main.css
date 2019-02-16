@@ -138,5 +138,17 @@ h1 {
     display: none;
   }
 }
+.card {
+  text-align: left;
+  min-height: 18rem;
+  width: auto;
+}
+.card--image {
+  max-width: 100%;
+  max-height: 12rem;
+}
+.card--title {
+  text-align: left;
+}
 
 /*# sourceMappingURL=main.css.map */

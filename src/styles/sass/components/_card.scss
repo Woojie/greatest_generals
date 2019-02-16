@@ -1,0 +1,12 @@
+.card {
+  text-align: left;
+  min-height: 18rem;
+  width: auto;
+  &--image{
+    max-width: 100%;
+    max-height: 12rem;
+  }
+  &--title{
+    text-align: left;
+  }
+}
