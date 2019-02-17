@@ -17,16 +17,19 @@
 }
 
 .generalList{
-
   &--column {
     &--3 {
       flex: 1 0 30%;
       margin: 5px;
+      @media (max-width: 900px) {
+       flex: 1 0 48%; 
+      }
     }
   }
+
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1000px) {
   .container {
     width: 80vw;
   }

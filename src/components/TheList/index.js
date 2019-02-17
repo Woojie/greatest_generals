@@ -20,7 +20,7 @@ class TheList extends React.Component{
 
     return(
       <React.Fragment>
-        <h1>The List</h1>
+        <h1 className="page-title">The List</h1>
         <div className="container generalList--column">
           {generalList}
         </div>

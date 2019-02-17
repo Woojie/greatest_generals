@@ -30,9 +30,13 @@ test('expect inital hidden state to be true', () => {
 
 test('clicking button changes hidden state (for mobile nav)', ()=>{
   const wrapper = setup()
+
+  //find buttons
   const button = findByTestAttribute(wrapper, 'navbar-mobile-menu-button')
   button.simulate('click')
   wrapper.update()
+
+  //make sure mobile version is on when button is pressed
   const toggler = findByTestAttribute(wrapper, 'mobile')
   expect(toggler).toHaveLength(1)
   expect(wrapper.state('hidden')).toEqual(false)
