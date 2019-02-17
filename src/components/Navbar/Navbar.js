@@ -28,7 +28,7 @@ export default class Navbar extends Component {
     return (
       <div className="navbar" data-test="navbar-component">
         <div className="navbar-toggler">
-          <img className="navbar-menu" src={menu} alt="hamburger menu" onClick={this.onClick} />
+          <img data-test="navbar-mobile-menu-button" className="navbar-menu" src={menu} alt="hamburger menu" onClick={this.onClick} />
         </div>
 
         <Link to="/">
@@ -37,7 +37,7 @@ export default class Navbar extends Component {
           </div>
         </Link>
 
-        <ul className={hiddenToggler}>
+        <ul className={hiddenToggler} data-test={this.state.hidden ? 'web' : 'mobile'}>
 
           <li className="navbar-links-exit">
             <img src={exit} alt="x" width="20px" onClick={this.closeMenu} />

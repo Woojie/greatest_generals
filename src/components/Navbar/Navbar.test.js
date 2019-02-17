@@ -8,7 +8,9 @@ import { findByTestAttribute } from '../../test/test.utils'
 Enzyme.configure({ adapter: new EnzymeAdapter() })
 
 const setup = (props={}, state=null) => {
-  return shallow(<Navbar {...props} />)
+  const wrapper = shallow(<Navbar {...props} />)
+  if (state) wrapper.setState(state)
+  return wrapper 
 }
 
 test('renders without crashing', () => {
@@ -19,10 +21,21 @@ test('renders without crashing', () => {
 
 test('expect inital hidden state to be true', () => {
   const wrapper=setup()
+  const toggler = findByTestAttribute(wrapper, 'web')
+
   expect(wrapper.state('hidden')).toEqual(true)
+  expect(toggler).toHaveLength(1)
+
 })
 
 test('clicking button changes hidden state (for mobile nav)', ()=>{
   const wrapper = setup()
+  const button = findByTestAttribute(wrapper, 'navbar-mobile-menu-button')
+  button.simulate('click')
+  wrapper.update()
+  const toggler = findByTestAttribute(wrapper, 'mobile')
+  expect(toggler).toHaveLength(1)
+  expect(wrapper.state('hidden')).toEqual(false)
   
 })
+

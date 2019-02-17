@@ -33,3 +33,30 @@ test('non-existent path should redirect to 404', ()=> {
   )
   expect(wrapper.find('PageDoesNotExist').exists()).toBe(true)
 })
+
+test(`'/' should redirect to Home`, ()=> {
+  const wrapper = mount(
+    <MemoryRouter initialEntries={[ '/' ]} initialIndex={0}>
+      <App />
+    </MemoryRouter>
+  )
+  expect(wrapper.find('Home').exists()).toBe(true)
+})
+
+// test(`'/theList' should redirect to TheList Component`, ()=> {
+//   const wrapper = mount(
+//     <MemoryRouter initialEntries={[ '/theList' ]} initialIndex={0}>
+//       <App />
+//     </MemoryRouter>
+//   )
+//   expect(wrapper.find('TheList').exists()).toBe(true)
+// })
+
+test(`'/generals' should redirect to Geneals homepage`, ()=> {
+  const wrapper = mount(
+    <MemoryRouter initialEntries={[ '/generals' ]} initialIndex={0}>
+      <App />
+    </MemoryRouter>
+  )
+  expect(wrapper.find('Generals').exists()).toBe(true)
+})
