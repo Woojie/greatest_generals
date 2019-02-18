@@ -63,7 +63,7 @@ body {
 }
 
 p {
-  font-size: 0.7rem;
+  font-size: 1rem;
 }
 
 a {
@@ -249,7 +249,7 @@ h1 {
   display: relative;
 }
 .homepage-intro--gibbons--caption {
-  font-size: 0.5rem;
+  font-size: 0.75rem;
 }
 
 /*# sourceMappingURL=main.css.map */

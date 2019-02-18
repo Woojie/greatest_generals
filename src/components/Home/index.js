@@ -1,7 +1,5 @@
 import React from 'react'
 
-import gibbon from '../../images/home/gibbon.jpg'
-
 export default class Home extends React.Component{
 
   render(){
