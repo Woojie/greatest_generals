@@ -4,6 +4,12 @@ import { Link } from 'react-router-dom'
 import menu from '../../images/nav/menu.svg'
 import exit from '../../images/nav/exit.svg'
 
+/**
+ * Navabar:
+ * @state hide or show the mobile menu button
+ * @function closeMenu Closes the mobile menu button. Used when clicking on a menu item
+ * @var hiddenToggler conditional class that toggles the web and mobile navbar
+ */
 
 export default class Navbar extends Component {
   state = {

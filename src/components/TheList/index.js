@@ -4,6 +4,10 @@ import PropTypes from 'prop-types'
 
 import Generals from './generals'
 
+/**
+ * @var mapStateToProps grabs the genral list from redux
+ * @var generalList maps out the list of generals 
+ */
 
 class TheList extends React.Component{
 

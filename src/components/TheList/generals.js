@@ -1,6 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+/**
+ * 
+ * @param {name, portrait, rank, nationality} props from TheList.js
+ * @returns UI component for the List 
+ */
+
 const Generals = ({ name, portrait, rank, nationality }) => (
   <div className="grid--column--3">
     <div className="card">

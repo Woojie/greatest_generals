@@ -1,12 +1,10 @@
 import React from 'react';
-import Enzyme, { shallow, mount } from 'enzyme'
-import EnzymeAdapter from 'enzyme-adapter-react-16'
+import { shallow, mount } from 'enzyme'
 import { MemoryRouter } from 'react-router'
 
 import App from './App';
 import { findByTestAttribute } from './test/test.utils'
 
-Enzyme.configure({ adapter: new EnzymeAdapter() })
 
 /**
  * factory function to create shallow wrapper for App Component
