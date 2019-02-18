@@ -1,0 +1,20 @@
+.homepage-intro {
+  width: 80vw;
+  p{
+    margin-bottom: 1rem;
+    text-align: left;
+    text-indent: 1rem;
+
+  }
+  &--gibbons {
+    background-image: url('../../images/home/gibbon.jpg');
+    width: 28vw;
+    border: 1px $greyish-border solid;
+    height: auto;
+    background-size: contain;
+    display: relative;
+    &--caption {
+      font-size: 0.5rem;
+    }
+  }
+}

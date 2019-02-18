@@ -1,6 +1,6 @@
 import React from 'react'
-
 import { connect } from "react-redux";
+import PropTypes from 'prop-types'
 
 import Generals from './generals'
 
@@ -21,7 +21,7 @@ class TheList extends React.Component{
     return(
       <React.Fragment>
         <h1 className="page-title">The List</h1>
-        <div className="container generalList--column">
+        <div className="container grid--column">
           {generalList}
         </div>
       </React.Fragment>
@@ -33,6 +33,10 @@ const mapStateToProps = ({ theList }) => {
   return{
     generals:theList
   }
+}
+
+TheList.propTypes = {
+  generals: PropTypes.array
 }
 
 export default connect(mapStateToProps)(TheList)

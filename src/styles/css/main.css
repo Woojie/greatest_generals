@@ -28,12 +28,26 @@ body {
   flex-wrap: wrap;
 }
 
-.generalList--column--3 {
+.grid--row {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 1rem 0rem;
+}
+.grid--column--2 {
+  flex: 1 0 47%;
+}
+.grid--column--1-of-3 {
+  flex: 1 0 30%;
+}
+.grid--column--2-of-3 {
+  flex: 1 0 63%;
+}
+.grid--column--3 {
   flex: 1 0 30%;
   margin: 5px;
 }
 @media (max-width: 900px) {
-  .generalList--column--3 {
+  .grid--column--3 {
     flex: 1 0 48%;
   }
 }
@@ -46,6 +60,10 @@ body {
 body {
   font-family: "Constantia", sans-serif;
   color: #111111;
+}
+
+p {
+  font-size: 0.7rem;
 }
 
 a {
@@ -212,6 +230,26 @@ h1 {
 .notfound-text {
   padding: 15rem 0;
   text-align: center;
+}
+
+.homepage-intro {
+  width: 80vw;
+}
+.homepage-intro p {
+  margin-bottom: 1rem;
+  text-align: left;
+  text-indent: 1rem;
+}
+.homepage-intro--gibbons {
+  background-image: url("../../images/home/gibbon.jpg");
+  width: 28vw;
+  border: 1px #d4d4d5 solid;
+  height: auto;
+  background-size: contain;
+  display: relative;
+}
+.homepage-intro--gibbons--caption {
+  font-size: 0.5rem;
 }
 
 /*# sourceMappingURL=main.css.map */

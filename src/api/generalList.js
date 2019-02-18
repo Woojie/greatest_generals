@@ -31,7 +31,7 @@ export const generalList = [
   new General('Julius Caesar', -50, "Roma Republic", 'Italy', 4, 'Alesia', 'Caesar', 4, caesar ),
   new General('Alexander the Great', -332, "Kingdom of Macedonia", 'Greece', 5, 'Gaugamela', 'Basileus/Pharoah/Hegemon/Shah', 5, alexander),
   new General('Hannibal Barca', -200, "Carthage", 'Libya', 6, 'Cannae', 'General', 6, hannibal ),
-  new General('Helmuth Graf von Moltke', 1868, "German Empire", 'Germany', 7, 'Field Marshal','Sedan', 7, moltke ),
+  new General('Helmuth von Moltke', 1868, "German Empire", 'Germany', 7, 'Field Marshal','Sedan', 7, moltke ),
   new General('Alexander Suvorov', 1786, "Russian Empire", 'Russia', 8, 'Italian Campaign', 'Generalissimo', 8, suvorov ),
   new General('Han Xin', -205, "Han Dynasty", 'China', 9, 'Gaixia', 'Grand Marshal(Da Sima)', 9, hanxin ),
   new General('Jan Zizka', 1421, "Kingdom of Bohemia", 'Czech Repbulic', 10, 'Hussite Wars','Hetman', 10, zizka ),

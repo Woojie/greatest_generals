@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const Generals = ({ name, portrait, rank, nationality }) => (
-  <div className="generalList--column--3">
+  <div className="grid--column--3">
     <div className="card">
       <div className="card--ribbon">
         <div className="card--ribbon--text"> #{rank} </div>
@@ -20,5 +21,12 @@ const Generals = ({ name, portrait, rank, nationality }) => (
     </div>
   </div>
 )
+
+Generals.propTypes = {
+  name: PropTypes.string.isRequired,
+  portrait: PropTypes.string,
+  rank: PropTypes.number,
+  nationality: PropTypes.string
+}
 
 export default Generals
