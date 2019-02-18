@@ -8,7 +8,7 @@ import PropTypes from 'prop-types'
  */
 
 const Generals = ({ name, portrait, rank, nationality }) => (
-  <div className="grid--column--3">
+  <div className="grid--column--3" data-test="generals-component">
     <div className="card">
       <div className="card--ribbon">
         <div className="card--ribbon--text"> #{rank} </div>
