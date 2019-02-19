@@ -17,27 +17,40 @@ test('renders without crashing', () => {
   expect(navbarComponent.length).toBe(1)
 });
 
-test('expect inital hidden state to be true', () => {
-  const wrapper=setup()
-  const toggler = findByTestAttribute(wrapper, 'web')
-
-  expect(wrapper.state('hidden')).toEqual(true)
-  expect(toggler).toHaveLength(1)
-
-})
-
-test('clicking button changes hidden state (for mobile nav)', ()=>{
-  const wrapper = setup()
-
-  //find buttons
-  const button = findByTestAttribute(wrapper, 'navbar-mobile-menu-button')
-  button.simulate('click')
-  wrapper.update()
-
-  //make sure mobile version is on when button is pressed
-  const toggler = findByTestAttribute(wrapper, 'mobile')
-  expect(toggler).toHaveLength(1)
-  expect(wrapper.state('hidden')).toEqual(false)
+describe('expect intial hidden state to be true', ()=>{
+  let wrapper
+  beforeEach(()=>{
+    wrapper = setup()
+  })
+  test('state hidden equals true', ()=>{
+    expect(wrapper.state('hidden')).toEqual(true)
+  })
+  test('expect web version to be active as hidden is true', ()=>{
+    const toggler = findByTestAttribute(wrapper, 'web')
   
+    expect(toggler).toHaveLength(1)
+  })
+
 })
+
+describe('clicking button changes hidden state', ()=>{
+  let wrapper,
+  button
+  beforeEach(()=>{
+    wrapper=setup()
+    button = findByTestAttribute(wrapper, 'navbar-mobile-menu-button')
+    button.simulate('click')
+    wrapper.update()
+  })
+  
+  test('mobile version is present', ()=>{
+    const toggler = findByTestAttribute(wrapper, 'mobile')
+    expect(toggler).toHaveLength(1)
+  })
+  test('click on mobile hamburger menu btton switches state to false', ()=>{
+    expect(wrapper.state('hidden')).toEqual(false)
+  }) 
+})
+
+
 
