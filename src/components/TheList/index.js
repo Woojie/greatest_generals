@@ -33,9 +33,9 @@ class TheList extends React.Component{
   }
 }
 
-const mapStateToProps = ({ theList }) => {
+const mapStateToProps = ({ theList:{ generalList } }) => {
   return{
-    generals:theList
+    generals:generalList
   }
 }
 

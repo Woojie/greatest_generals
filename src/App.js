@@ -6,6 +6,7 @@ import Home from './components/Home'
 import TheList from './components/TheList'
 import Generals from './components/Generals'
 import PageDoesNotExist from './404Error'
+import General from './components/General'
 
 class App extends Component {
   render() {
@@ -17,7 +18,7 @@ class App extends Component {
             <Route exact path="/"  render={props => <Home {...props} />} />
             <Route path="/theList"  render={props => <TheList {...props} />} />
             <Route path="/generals"  render={props => <Generals {...props} />} />
-            <Route path="/generals/:generalsid"  render={props => <Generals {...props} />} />
+            <Route path="/general/:generalsid"  render={props => <General {...props} />} />
             <Route component={PageDoesNotExist} />
           </Switch>
         </div>x

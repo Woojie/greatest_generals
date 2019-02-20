@@ -1,8 +1,22 @@
 import { generalList } from '../api/generalList'
 
-const generals = generalList
+import { WATCH_ACTIVE_GENERAL, SELECT_ACTIVE_GENERAL } from "../action_creator";
 
-export const generalListReducers = (state=generals, action) => {
-  
+const generals = {
+  generalList,
+  activeGeneral: {}
+}
+
+export const generalListReducers = (state=generals, { type, id }) => {
+  if(type === WATCH_ACTIVE_GENERAL) {
+    return {
+      ...state
+    }
+  }else if(type === SELECT_ACTIVE_GENERAL) {
+    return {
+      ...state,
+      activeGeneral: state.generalList.find(general=>general.id === Number(id))
+    }
+  }
   return state
 }

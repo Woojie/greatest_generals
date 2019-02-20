@@ -1,10 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import { Link } from 'react-router-dom'
 
 /**
  * 
  * @param {name, portrait, rank, nationality} props from TheList.js
  * @returns UI component for the List 
+ * @link links to /generals/:generalId
  */
 
 const Generals = ({ name, portrait, rank, nationality }) => (
@@ -21,7 +23,9 @@ const Generals = ({ name, portrait, rank, nationality }) => (
       </div>
       <div className="card--hidden">
         <div className="card--hidden--button">
+        <Link to={`/general/${rank}`}>
           More...
+          </Link>
         </div>
       </div>
     </div>
@@ -36,3 +40,5 @@ Generals.propTypes = {
 }
 
 export default Generals
+
+
