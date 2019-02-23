@@ -5,7 +5,7 @@ import Navbar from './components/Navbar/Navbar'
 import Home from './components/Home'
 import TheList from './components/TheList'
 import Generals from './components/Generals'
-import PageDoesNotExist from './404Error'
+import PageDoesNotExist from './PageNotFound/404Error'
 import General from './components/General'
 
 class App extends Component {

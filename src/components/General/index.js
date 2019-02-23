@@ -1,6 +1,7 @@
 import React from 'react'
 import { connect } from "react-redux";
 import { bindActionCreators } from "redux";
+import PropTypes from 'prop-types'
 
 import { activeGeneral } from "../../actions";
 
@@ -18,6 +19,10 @@ class General extends React.Component{
       </div>
     )
   }
+}
+
+General.propTypes = {
+  activeGeneral: PropTypes.object
 }
 
 const mapStatetoProps = ({ theList }) => {

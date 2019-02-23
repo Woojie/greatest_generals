@@ -1,3 +1,3 @@
-import { WATCH_ACTIVE_GENERAL } from "./action_creator";
+import { types } from "./action_types";
 
-export const activeGeneral = id => ({ type: WATCH_ACTIVE_GENERAL, id, })
+export const activeGeneral = id => ({ type: types.WATCH_ACTIVE_GENERAL, id, }) 

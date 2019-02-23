@@ -2,7 +2,7 @@ import React from 'react';
 import { shallow } from 'enzyme'
 
 import PageNotFound from './404Error';
-import { findByTestAttribute } from './test/test.utils'
+import { findByTestAttribute } from '../test/test.utils'
 
 
 const setup = (props={}, state=null) => {
