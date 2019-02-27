@@ -1,18 +1,19 @@
 .homepage-intro {
   width: 80vw;
   p{
-    margin-bottom: 1rem;
+    margin-bottom: 2em;
     text-align: left;
     text-indent: 1rem;
 
   }
   &--gibbons {
     background-image: url('../../images/home/gibbon.jpg');
-    width: 28vw;
+
     border: 1px $greyish-border solid;
     height: auto;
     background-size: contain;
-    display: relative;
+    background-repeat: no-repeat;
+    
     &--caption {
       font-size: 0.75rem;
     }

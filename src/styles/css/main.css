@@ -236,17 +236,16 @@ h1 {
   width: 80vw;
 }
 .homepage-intro p {
-  margin-bottom: 1rem;
+  margin-bottom: 2em;
   text-align: left;
   text-indent: 1rem;
 }
 .homepage-intro--gibbons {
   background-image: url("../../images/home/gibbon.jpg");
-  width: 28vw;
   border: 1px #d4d4d5 solid;
   height: auto;
   background-size: contain;
-  display: relative;
+  background-repeat: no-repeat;
 }
 .homepage-intro--gibbons--caption {
   font-size: 0.75rem;
