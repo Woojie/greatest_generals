@@ -10,7 +10,7 @@ const generals = {
 export const generalListReducers = (state=generals, { type, id }) => {
   if(type === types.WATCH_ACTIVE_GENERAL) {
     return {
-      ...state
+      activeGeneral: {}
     }
   }else if(type === types.SELECT_ACTIVE_GENERAL) {
     return {
