@@ -14,7 +14,7 @@ class General extends React.Component{
   render(){
 
     return(
-      <div>
+      <div data-test="General-component">
         <h1>{this.props.currentGeneral.name}</h1>
       </div>
     )
